@@ -39,7 +39,7 @@
                  [:div#header
                   [:h1 (link-to "/blog/" "The ringMon middleware demo")]
                   [:br][:br][:h2 "Click on 'ringMon' link."]
-                  [:h3 (link-to "https://github.com/zoka/noirMon" "Get source code.")]
+                  [:h3 (link-to "https://github.com/zoka/noirMon" "Get the source code.")]
                   [:ul.nav
                    (map link-item main-links)]]
                  content]]]))

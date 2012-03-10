@@ -10,7 +10,7 @@
   (:import com.petebevin.markdown.MarkdownProcessor))
 
 (def posts-per-page 10)
-(def date-format (tform/formatter "MM/dd/yy" (ctime/default-time-zone)))
+(def date-format (tform/formatter "dd/MM/yy" (ctime/default-time-zone)))
 (def time-format (tform/formatter "h:mma" (ctime/default-time-zone)))
 (def mdp (MarkdownProcessor.))
 

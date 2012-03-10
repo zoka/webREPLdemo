@@ -60,4 +60,4 @@
 
 (defn init! []
     (db/put! :users {})
-    (store! (prepare {:username "admin" :password "admin"})))
+    (store! (prepare {:username "admin" :password "clojars"})))

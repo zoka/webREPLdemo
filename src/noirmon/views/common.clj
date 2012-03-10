@@ -4,14 +4,15 @@
        hiccup.page-helpers))
 
 ;; Links and includes
-(def main-links [{:url "/blog/admin" :text "Admin"}])
+(def main-links [{:url "/blog/admin" :text "Admin"}
+                 {:url "/ringmon/monview.html" :text "ringMon" :target "_blank"}])
 
 (def admin-links [{:url "/blog/" :text "Blog"}
                   {:url "/blog/admin" :text "Posts"}
                   {:url "/blog/admin/users" :text "Users"}
                   {:url "/blog/logout" :text "Logout"}])
 
-(def includes {:jquery (include-js "http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js")
+(def includes {:jquery (include-js "http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")
                :default (include-css "/css/default.css")
                :reset (include-css "/css/reset.css")
                :blog.js (include-js "/js/blog.js")})
@@ -20,7 +21,7 @@
 
 (defpartial build-head [incls]
             [:head
-             [:title "The Noir Blog"]
+             [:title "noirMon"]
              (map #(get includes %) incls)])
 
 (defpartial link-item [{:keys [url cls text]}]
@@ -36,7 +37,9 @@
                [:div#wrapper
                 [:div.content
                  [:div#header
-                  [:h1 (link-to "/blog/" "The Noir blog")]
+                  [:h1 (link-to "/blog/" "The ringMon middleware demo")]
+                  [:br][:br][:h2 "Click on 'ringMon' link."]
+                  [:h3 (link-to "https://github.com/zoka/noirMon" "Get source code.")]
                   [:ul.nav
                    (map link-item main-links)]]
                  content]]]))

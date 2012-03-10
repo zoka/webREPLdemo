@@ -4,8 +4,7 @@
        hiccup.page-helpers))
 
 ;; Links and includes
-(def main-links [{:url "/blog/admin" :text "Admin"}
-                 {:url "/ringmon/monview.html" :text "ringMon" :target "_blank"}])
+(def main-links [{:url "/blog/admin" :text "Admin"}])
 
 (def admin-links [{:url "/blog/" :text "Blog"}
                   {:url "/blog/admin" :text "Posts"}
@@ -38,7 +37,7 @@
                 [:div.content
                  [:div#header
                   [:h1 (link-to "/blog/" "The ringMon middleware demo")]
-                  [:br][:br][:h2 "Click on 'ringMon' link."]
+                  [:br][:br][:h2 (link-to "/ringmon/monview.html" "Click here to access ringMon monitoring page")]
                   [:h3 (link-to "https://github.com/zoka/noirMon" "Get the source code.")]
                   [:ul.nav
                    (map link-item main-links)]]

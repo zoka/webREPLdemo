@@ -5,7 +5,7 @@ This is slightly modified Chris Granger's
 he used as a demo for his
 [Noir](https://github.com/ibdknox/noir) web framework.
 
-It's main purpose is to provide demo for 
+Its main purpose is to provide demo for
 [ringMon](https://github.com/zoka/ringMon)
 - middleware for 
 [Ring](https://github.com/mmcgrana/ring) web library which is de-facto standard 

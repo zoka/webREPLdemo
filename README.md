@@ -8,14 +8,16 @@ he used as a demo for his
 It's main purpose is to provide demo for 
 [ringMon](https://github.com/zoka/ringMon)
 - middleware for 
-[Ring](https://github.com/mmcgrana/ring) web library, that is de-facto standard 
-for CLojure web applications. It also demonstartes how to incorporate ringMon
+[Ring](https://github.com/mmcgrana/ring) web library which is de-facto standard 
+for Clojure web applications. It also demonstartes how to incorporate ringMon
 into typical Noir based application.
 
 Once injected into web aplication's Ring chain,
 ringMon drives a single monitoring web page that displays important application
 statistics (JMX and derived data) and more importantly, it provides full
-featured nREPL front end with syntax colored editor and peristent sessions.
+featured 
+[nREPL](https://github.com/clojure/tools.nrepl)
+front end with syntax colored editor and peristent sessions.
 
 ## Demo
 

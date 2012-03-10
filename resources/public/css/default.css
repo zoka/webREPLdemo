@@ -11,12 +11,13 @@ input + input { margin-top:10px; }
 input + textarea { margin-top:10px; }
 
 
-#wrapper {width:800px; margin: 0 auto; padding-top:50px; }
+#wrapper {width:800px; margin: 0 auto; padding-top:20px; }
 #wrapper > div.content { float:left; display:inline; padding-bottom:100px; }
 
-#header { float:left; display:inline; width:100%; margin-bottom:30px;}
-#header h1 {float:left; display:inline; color:#56BF90; }
+#header { float:left; display:inline; width:100%; margin-bottom:10px;}
+#header h1 {float:left; display:inline; color: #d1d9e1; }
 #header h1 a { color:#56BF90; }
+#header h2 a { color:#CCCC2F; }
 #header ul {float:right; display:inline; margin-top:15px;}
 #header ul li {float:left; display:inline; margin-left:15px;}
 

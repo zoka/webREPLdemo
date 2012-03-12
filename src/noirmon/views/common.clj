@@ -29,8 +29,6 @@
 
 ;; Layouts
 
-;(link-to "/ringmon/monview.html" "Click here to access ringMon monitoring page")
-;(link-to "/blog/" "The ringMon middleware demo")
 (defpartial main-layout [& content]
             (html5
               (build-head [:reset :default :jquery :blog.js])
@@ -38,7 +36,7 @@
                [:div#wrapper
                 [:div.content
                  [:div#header
-                  [:h1 "The " (link-to "https://github.com/zoka/noirMon" "ringMon")
+                  [:h1 "The " (link-to "https://github.com/zoka/ringMon" "ringMon")
                   " middleware demo"]
                   [:br] [:br]
                   [:h2 "Click

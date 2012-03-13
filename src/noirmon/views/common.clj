@@ -13,6 +13,7 @@
 
 (def includes {:jquery (include-js "http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")
                :default (include-css "/css/default.css")
+               :gist (include-css "/css/gist.css")
                :reset (include-css "/css/reset.css")
                :blog.js (include-js "/js/blog.js")})
 
@@ -31,7 +32,7 @@
 
 (defpartial main-layout [& content]
             (html5
-              (build-head [:reset :default :jquery :blog.js])
+              (build-head [:reset :default :gist :jquery :blog.js])
               [:body
                [:div#wrapper
                 [:div.content

@@ -41,7 +41,7 @@ of `lein repl` using ringMon nREPL then do
 lein run -m ringmon.server "{:local-repl true :local-port 0}"
 ```
 This will start a separate Jetty instance on autoselected server
-port just to serve the REPL page. You default browser start automatically
+port just to serve the nREPL page. Your default browser start automatically
 and load the monitoring page. If `:local-port` is 
 non-zero value then there will be no port autoselection. Default
 value is `8081`.

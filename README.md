@@ -8,16 +8,18 @@ used as a demo for his
 Its main purpose is to provide showcase for
 [ringMon](https://github.com/zoka/ringMon)
 - middleware for
-[Ring](https://github.com/mmcgrana/ring) web library which is de-facto standard
-for Clojure web applications. It also demonstrates how to incorporate ringMon
-into typical Noir based application.
+[Ring](https://github.com/mmcgrana/ring) web library. This library is
+de-facto standard for Clojure web applications.
 
 Once injected into web aplication's Ring chain,
 ringMon drives a single monitoring web page that displays important application
-statistics (such as CPU load and raw JMX property values) and more importantly, it provides full
-featured
+statistics (such as CPU load and raw JMX property values) and more importantly,
+it provides full featured
 [nREPL](https://github.com/clojure/tools.nrepl)
 front end with syntax colored editor and peristent sessions.
+
+noirMon also demonstrates how to incorporate ringMon
+into typical Noir based application.
 
 ## Demo
 
@@ -42,11 +44,11 @@ lein run -m ringmon.server "{:local-repl true :local-port 0}"
 ```
 This will start a separate Jetty instance on autoselected server
 port just to serve the nREPL page. Your default browser start automatically
-and load the monitoring page. If `:local-port` is 
+and load the monitoring page. If `:local-port` is
 non-zero value then there will be no port autoselection. Default
 value is `8081`.
-Since both browser and application run locally, 
-the page refresh rate will be adjusted accordingly. 
+Since both browser and application run locally,
+the page refresh rate will be adjusted accordingly.
 At this point noirMon is not runnning yet.
 You can start it entering this in nREPL input window:
 

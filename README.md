@@ -27,6 +27,7 @@ The code is ready made to be deployed on Heroku - you can see it see it in actio
 ## Usage
 
 To run locally:
+
 ```bash
 lein deps
 lein run
@@ -35,6 +36,7 @@ Point your browser at localhost:8080.
 
 If you want to do equivalnet
 of `lein repl` using ringMons's REPL then do
+
 ```bash
 lein
 run -m ringmon.server "{:local-repl true :local-port 0}"
@@ -42,10 +44,12 @@ run -m ringmon.server "{:local-repl true :local-port 0}"
 This will automatically start a separate Jetty instance on autoselcted server
 port just to serve the REPL page. Now you can start the application by
 entering this in nREPL input window:
+
 ```clojure
 (use 'noirmon.server)
 (-main)
 ```
+
 Note that now the monitoring ringMon page wihin noirMon itself will
 not be operational.
 

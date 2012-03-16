@@ -32,25 +32,29 @@ To run locally:
 lein deps
 lein run
 ```
-Point your browser at localhost:8080.
+Point your browser at `localhost:8080`.
 
 If you want to do equivalnet
-of `lein repl` using ringMons's REPL then do
+of `lein repl` using ringMon nREPL then do
 
 ```bash
-lein
-run -m ringmon.server "{:local-repl true :local-port 0}"
+lein run -m ringmon.server "{:local-repl true :local-port 0}"
 ```
-This will automatically start a separate Jetty instance on autoselcted server
-port just to serve the REPL page. Now you can start the application by
-entering this in nREPL input window:
+This will start a separate Jetty instance on autoselected server
+port just to serve the REPL page. You default browser start automatically
+and load the monitoring page. If `:local-port` is 
+non-zero value then there will be no port autoselection. Default
+value is `8081`.
+Since both browser and application run locally, 
+the page refresh rate will be adjusted accordingly. 
+At this point noirMon is not runnning yet.
+You can start it entering this in nREPL input window:
 
 ```clojure
 (use 'noirmon.server)
 (-main)
 ```
-
-Note that now the monitoring ringMon page wihin noirMon itself will
+Note that now the monitoring page wihin noirMon itself will
 not be operational.
 
 ## License

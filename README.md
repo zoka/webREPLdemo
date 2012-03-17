@@ -34,7 +34,7 @@ To run locally:
 lein deps
 lein run
 ```
-Point your browser at `localhost:8080`.
+Point your browser to `localhost:8080`.
 
 If you want to do equivalnet
 of `lein repl` using ringMon nREPL then do

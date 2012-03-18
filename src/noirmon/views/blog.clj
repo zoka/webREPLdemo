@@ -5,6 +5,8 @@
   (:require [noirmon.models.post :as posts]
             [noirmon.views.common :as common]
             [noirmon.models.user :as user]
+            [ringmon.monitor      :as monitor]
+            [noir.request         :as request]
             [noir.response :as resp]))
 
 ;; Page structure
@@ -27,10 +29,25 @@
 
 ;; Blog pages
 
+(def first-page-view (atom false))
+(defn check-ringmon-configure
+  []
+  (when-not @first-page-view
+  (let [req  (request/ring-request)
+       srv  (:server-name req)
+       uri  (:uri req)
+       port (:server-port req)
+       tp   (name(:scheme req))
+       url  (str tp "://" srv ":" port uri)]
+   (println "Url:" url)
+   (monitor/merge-cfg {:parent-url url})
+   (reset! first-page-view true))))
+
 (defpage "/" []
          (resp/redirect "/blog/"))
 
 (defpage "/blog/" []
+         (check-ringmon-configure)
          (blog-page (posts/get-latest)))
 
 (defpage "/blog/page/:page" {:keys [page]}

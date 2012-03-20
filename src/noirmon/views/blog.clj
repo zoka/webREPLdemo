@@ -39,7 +39,6 @@
        port (:server-port req)
        tp   (name(:scheme req))
        url  (str tp "://" srv ":" port uri)]
-   (println "Url:" url)
    (monitor/merge-cfg {:parent-url url})
    (reset! first-page-view true))))
 

@@ -36,15 +36,15 @@ lein run
 ```
 Point your browser to `localhost:8080`.
 
-If you want to do equivalnet
+If you want to do equivalent
 of `lein repl` but using ringMon nREPL then do
 
-```bash
+```clojure
 lein run -m ringmon.server "{:local-repl true :local-port 0}"
 ```
 This will start a separate Jetty instance on autoselected server
 port just to serve the nREPL page. Your default browser will automatically
-start and load the monitoring page. If `:local-port` is
+start and load the monitoring page. If `:local-port` has
 non-zero value then there will be no port autoselection. Default
 value is `8081`.
 
@@ -57,7 +57,7 @@ You can start it entering this in nREPL input window:
 (use 'noirmon.server)
 (-main)
 ```
-Note that in this  case the monitoring page wihin noirMon itself will
+Note that in this  case the monitoring page within noirMon itself will
 not be accessible - you will get
 `ringMon already wrapped into separate web server at port xxxx` error
 message where the port is the one the other Jetty instance is using.

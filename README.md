@@ -19,7 +19,7 @@ it provides full featured
 front end with syntax colored editor, command history and peristent sessions.
 
 The noirMon also demonstrates how to incorporate ringMon
-into typical Noir based application.
+into a typical Noir based application.
 
 ## Demo
 

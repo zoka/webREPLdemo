@@ -67,12 +67,12 @@ lein run -m ringmon.server :local-repl true :port 7777
 ```
 This will start a separate Jetty instance on port 7777
 just to serve the nREPL page. Your default browser window
-will automatically be opened pointing to the the page itself.
+will automatically be opened pointing to the page itself.
 If `:port` is set to zero at command line then its value
 will be autoselected. The default port value is `8888`.
 
 If you already
-have the browser window listening at port 7777 from previous run,
+have the browser window listening at port 7777 from the previous run,
 then you should ommit :local-repl option, or set it to false.
 
 ```clojure

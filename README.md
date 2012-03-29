@@ -48,7 +48,6 @@ the following procedure:
  git push origin # Update GitHub repository
  git push heroku master # rebuild and redeploy on Heroku
  ```
-
 ## Local Usage
 
 To run locally:

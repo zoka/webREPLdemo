@@ -101,7 +101,7 @@ web application process.
 
 The ringMon monitoring page within noirMon itself will
 not be accessible in this case - you will get
-`ringMon already wrapped into separate web server at port 7777` error
+`ringMon already wrapped into separate web server at port 7777` error 
 message if you try to follow the link from the main blog  application page.
 
 ## License

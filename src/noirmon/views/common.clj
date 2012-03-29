@@ -43,7 +43,7 @@
                   [:h2 "Click
                   <a target=\"_blank\" href=\"/ringmon/monview.html\">here</a>
                   to open the ringMon monitoring page"]
-                  ;[:h3 (link-to "https://github.com/zoka/noirMon" "Get the source code.")]
+                  ;[:h3 (link-to "https://github.com/zoka/noirMon" "Get the source.")]
                   [:ul.nav
                    (map link-item main-links)]]
                  content]]]))

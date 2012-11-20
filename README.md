@@ -28,7 +28,7 @@ cloud platform.
 The addition of a sigle file in project folder (`Procfile`)
 enables this  application to be deployed on Heroku. You can see it see it
 in action
-[here](http://noirmon.herokuapp.com/).
+[here](http://webrepl.herokuapp.com/).
 
 Since this is a blog app anway, it was convenient to add couple of
 of blog entries that describe ringMon features in more detail.

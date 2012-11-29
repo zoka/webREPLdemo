@@ -5,9 +5,7 @@ This is slightly modified Chris Granger's
 a demo for his
 [Noir](https://github.com/ibdknox/noir) web framework.
 
-Its main purpose is to provide a showcase for
-[ringMon](https://github.com/zoka/ringMon)
-- a middleware for
+Its main purpose is to provide a showcase for [ringMon](https://github.com/zoka/ringMon), a middleware for
 [Ring](https://github.com/mmcgrana/ring) web library. This library (Ring) is
 de-facto standard for Clojure web applications.
 

@@ -1,4 +1,4 @@
-# noirMon
+# webREPLdemo
 
 This is slightly modified Chris Granger's
 [Noir-blog](https://github.com/ibdknox/Noir-blog) application,

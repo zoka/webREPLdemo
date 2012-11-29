@@ -35,7 +35,7 @@ The blog contents is kept `sdb.db. New enttries are added using
 the following procedure:
 
  * Start application locally (see bellow for instructions)
- * The initial username is admin , password clojars, can be removed it once
+ * The initial username is admin , password clojars, this user can be removed once
  you add yourself as a another user.
  * Log in and add/modify blog entry.
  * Shut down the application and redeploy it with updated `sdb.db` on Heroku

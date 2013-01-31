@@ -21,7 +21,7 @@
 
 (defpartial build-head [incls]
             [:head
-             [:title "noirMon"]
+             [:title "webREPLdemo"]
              (map #(get includes %) incls)])
 
 (defpartial link-item [{:keys [url cls text]}]

@@ -1,7 +1,8 @@
 (ns noirmon.views.common
   (use noir.core
        hiccup.core
-       hiccup.page-helpers))
+       hiccup.element
+       hiccup.page))
 
 ;; Links and includes
 (def main-links [{:url "/blog/admin" :text "Admin"}])
